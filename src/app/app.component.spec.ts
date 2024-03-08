@@ -26,10 +26,41 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('ProyectoAngular');
   });
 
-  it('should render title', () => {
+  it(`Test input 3 result should be fizz`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ProyectoAngular app is running!');
+    const app = fixture.componentInstance;
+    expect('fizz').toEqual(app.fizzbuzz(3));
   });
+
+  it(`Test input 5 result should be buzz`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect('buzz').toEqual(app.fizzbuzz(5));
+  });
+
+  it(`Test input 15 result should be fizzbuzz`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect('fizzbuzz').toEqual(app.fizzbuzz(15));
+  });
+
+  it(`Test input -3 result should be Menor de 0`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect('Menor de 0').toEqual(app.fizzbuzz(-3));
+  });
+
+  it(`Test input 61 result should be fizzbuzz not`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect('fizzbuzz not').toEqual(app.fizzbuzz(61));
+  });
+
+  it(`Test input 123 result should be Mayor de 0`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect('Mayor de 0').toEqual(app.fizzbuzz(123));
+  });
+  
+  
 });

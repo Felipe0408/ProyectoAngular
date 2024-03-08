@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.divCuentas {
+    text-align: center;
+    border: 2px solid;
+    border-color: black;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+    flex: 1 1 auto;
+    margin-top: 5%;
+}
+
+.separacion {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.aiz--title{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 30px;
+}
+.aiz {
+    text-align: left;
+    margin-left: 30px;
+}
+.buttonMovimiento {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    display: flex;
+    padding: 1em 2em;
+    background: black;
+    color: white;
+    border-radius: 2em;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+}
