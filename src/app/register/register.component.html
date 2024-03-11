@@ -7,15 +7,7 @@
   </head>
   <body>
     <div class="lg_flexbox">
-      <div class="lg_lado_a">
-        <div class="lg_bienvenida">
-          <p class="lg_logo">Consultec</p>
-          <p class="lg_info">Te damos la bienvenida al portal personal Banking</p>
-        </div>
-        <div class="lg_registrar">
-          <a routerLink="">¿Ya tienes una cuenta? <span>Iniciar sesion</span></a>
-        </div>
-      </div>
+      <app-side-bar-side-a [ShowLoginTextchild]="ShowLoginText"></app-side-bar-side-a>
       <div class="lg_lado_b">
         <div class="lg_flex">
           <h2 class="lg_titulo_sesion">

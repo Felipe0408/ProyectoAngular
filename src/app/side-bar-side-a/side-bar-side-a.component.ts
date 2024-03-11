@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SideBarSideAComponent implements OnInit{
   @Input() ShowRegisterTextchild:any;
+  @Input() ShowLoginTextchild:any;
 
   constructor() {}
   ngOnInit() {}
