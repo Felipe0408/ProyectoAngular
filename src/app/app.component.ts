@@ -25,4 +25,55 @@ export class AppComponent {
     return orderword1 === orderword2
   }
 
+  fiboprimopartest(numero: number){
+    let respuesta  = `El número ${numero} es`;
+    let coma = 0;
+    //Comprueba si es primo
+    if(this.numPrimo(numero)) {
+        respuesta = respuesta + " primo";
+        coma = 1;
+    }
+    //Comprueba si es fibonaci
+    if(coma == 1){respuesta = respuesta+','}
+    if(this.numFibonacci(numero, 0, 0, 1)){
+      respuesta = respuesta+' fibonaci';
+      coma = 1;
+    }
+
+    //Comprueba si es par
+    if(coma == 1){respuesta = respuesta+' y'}
+    if(this.numPar(numero)){respuesta = respuesta + " par";}
+    else{respuesta = respuesta + " impar";}
+
+    return respuesta
+  }
+
+  numPrimo(numero: number): boolean {
+    if (numero <= 1) {
+      return false;
+    }
+    for (let i = 2; i <= Math.sqrt(numero); i++) {
+      if (numero % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  numPar(numero: number): boolean {
+    if(numero%2 === 0){return true}
+    else{return false}
+  }
+  numFibonacci(numero: number, siguiente: number, a: number, b:number):boolean | undefined {
+    if(numero === 0 || numero === 1){return true}
+    else if(siguiente > numero){return false}
+    else if(siguiente === numero){return true}
+    else{
+      siguiente = a + b;
+      a = b;
+      b = siguiente;
+      return this.numFibonacci(numero, siguiente, a, b); 
+    }
+    
+  }
+
 }

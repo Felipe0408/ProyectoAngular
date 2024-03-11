@@ -80,5 +80,23 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(false).toEqual(app.anagramtest('ola', 'ola'));
   });
+
+  it(`Prueba numero fiboparprimo 1`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect('El número 3 es primo, fibonaci y impar').toEqual(app.fiboprimopartest(3));
+  });
   
+  it(`Prueba numero fiboparprimo 2`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect('El número 4 es par').toEqual(app.fiboprimopartest(4));
+  });
+
+  it(`Prueba numero fiboparprimo 3`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect('El número 21 es fibonaci y impar').toEqual(app.fiboprimopartest(21));
+  });
+
 });
