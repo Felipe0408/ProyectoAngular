@@ -1,1 +1,13 @@
-<p>side-bar-side-a works!</p>
+<div class="lg_lado_a">
+    <div class="lg_bienvenida">
+      <p class="lg_logo">Consultec</p>
+      <p class="lg_info">Te damos la bienvenida al portal personal Banking</p>
+      <a href="#" class="lg_nuevo" onclick="banco()">
+        ¿Eres nuevo en el banco? <br />
+        <span> Crea tu clave</span></a>
+    </div>
+    <div *ngIf="ShowRegisterTextchild === true" class="lg_registrar" >
+      <a routerLink="Register">
+        ¿Aún no tienes una cuenta?<span>Registrate ahora</span></a>
+    </div>
+</div>

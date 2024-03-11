@@ -1,0 +1,110 @@
+/** RESETEO **/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+  * {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/** RESETEO **/
+body{
+    min-height: 100vh;
+}
+
+::placeholder{
+    color: #000;
+}
+
+.lg_logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.lg_info{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.lg_nuevo{
+    color: #fff;
+    text-decoration: none;
+    line-height: 0;
+
+    span{
+        margin: 7px 0px 0px 0px;
+        color: #000;
+        display: block;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+.lg_flexbox{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.lg_lado_a{
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    align-items: stretch;
+    height: 100%;
+}
+
+.lg_bienvenida{
+    background-color: #00abeb;
+    color: #fff;
+    padding: 9rem 3rem 9rem 2rem;
+    height: 100%;
+}
+
+.lg_registrar{
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 2.4rem 1rem 2.4rem 2rem;
+    a{
+        color: #fff;
+        text-decoration: none;
+        line-height: 0;
+    }
+    span{
+        color: #00abeb;
+        text-decoration: none;
+        display: block;
+        margin-top: 7px;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
