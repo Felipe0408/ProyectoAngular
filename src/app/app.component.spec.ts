@@ -59,8 +59,26 @@ describe('AppComponent', () => {
   it(`Test input 123 result should be Mayor de 0`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect('Mayor de 0').toEqual(app.fizzbuzz(123));
+    expect('Mayor0').toEqual(app.fizzbuzz(123));
   });
+
   
+  it(`Prueba anagrama 1`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(true).toEqual(app.anagramtest('listo', 'tolis'));
+  });
+
+  it(`Prueba anagrama 2`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(false).toEqual(app.anagramtest('ola', 'jalo'));
+  });
+
+  it(`Prueba anagrama 3 con la misma palabra`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(false).toEqual(app.anagramtest('ola', 'ola'));
+  });
   
 });

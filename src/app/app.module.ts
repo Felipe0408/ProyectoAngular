@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { CuentaComponent } from './cuenta/cuenta.component';
+import { SideBarSideAComponent } from './side-bar-side-a/side-bar-side-a.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    CuentaComponent,
+    SideBarSideAComponent
   ],
   imports: [
     BrowserModule,
