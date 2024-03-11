@@ -8,5 +8,7 @@ import { Component, Input } from '@angular/core';
 export class LoginComponent {
   title = "Login";
   ShowRegisterText = true;
+  
+
   constructor() {}
 }

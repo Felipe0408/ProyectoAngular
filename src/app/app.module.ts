@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CuentaComponent } from './cuenta/cuenta.component';
 import { SideBarSideAComponent } from './side-bar-side-a/side-bar-side-a.component';
+import { SideBarSideBComponent } from './side-bar-side-b/side-bar-side-b.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SideBarSideAComponent } from './side-bar-side-a/side-bar-side-a.compone
     LoginComponent,
     RegisterComponent,
     CuentaComponent,
-    SideBarSideAComponent
+    SideBarSideAComponent,
+    SideBarSideBComponent
   ],
   imports: [
     BrowserModule,

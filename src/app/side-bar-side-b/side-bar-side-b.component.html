@@ -1,0 +1,85 @@
+<div class="lg_lado_b">
+    <div class="lg_flex">
+        <h2 *ngIf="FormType === 'Login'" class="lg_titulo_sesion">
+            Inicio de
+            <p>sesión</p>
+        </h2>
+        <h2  *ngIf="FormType === 'Register'" class="lg_titulo_sesion">
+            Crear
+            <p>Cuenta</p>
+        </h2>
+        <form class="lg_flex" id="formulario_ini">
+            <input
+                *ngIf="FormType === 'Login'"
+                type="email"
+                placeholder="Ingresa tu correo electronico"
+                class="lg_input"
+                id="form_email"
+            />
+            <input
+                *ngIf="FormType === 'Login'"
+                type="password"
+                placeholder="Ingresa tu clave de internet"
+                class="lg_input"
+                id="form_pass"
+            />
+            <input
+                *ngIf="FormType === 'Register'"
+                id="nombre"
+                type="text"
+                placeholder="Ingresa tus nombres"
+                class="lg_input"
+            />
+            <input
+                *ngIf="FormType === 'Register'"
+                id="apellido"
+                type="text"
+                placeholder="Ingresa tus apellidos"
+                class="lg_input"
+            />
+            <input
+                *ngIf="FormType === 'Register'"
+                id="dni"
+                type="text"
+                placeholder="Ingresa tu dni"
+                class="lg_input"
+            />
+            <input
+                *ngIf="FormType === 'Register'"
+                id="fecha"
+                type="text"
+                placeholder="Ingresa fecha de nacimiento"
+                class="lg_input"
+            />
+            <input
+                *ngIf="FormType === 'Register'"
+                id="pass1"
+                type="passsword"
+                minlength="8"
+                placeholder="Ingresa contraseña"
+                class="lg_input"
+            />
+            <input
+                *ngIf="FormType === 'Register'"
+                id="pass2"
+                type="password"
+                minlength="8"
+                placeholder="Repite la contraseña que ingresaste"
+                class="lg_input"
+            />
+            <a *ngIf="FormType === 'Register'" class="lg_btn_crear" onclick="registrar()">
+                Crear cuenta
+            </a>
+            <p *ngIf="FormType === 'Login'" class="lg_problemas">
+              ¿Tienes problemas con tu cuenta?<a href="#"> Recuperar contraseña</a>
+            </p>
+        </form>
+        <input
+            *ngIf="FormType === 'Login'"
+            type="submit"
+            class="lg_btn_iniciar"
+            value="Iniciar sesion"
+            onclick="validarEmail()"
+        />
+    </div>
+</div>
